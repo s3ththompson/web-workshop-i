@@ -1,0 +1,104 @@
+/* reset */
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  margin-bottom: auto;
+  margin-top: auto;
+  font-weight: normal;
+}
+
+p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* base */
+
+:root {
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.3;
+  font-weight: 400;
+
+  color: black;
+  background-color: white;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: auto;
+  padding: 1rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  font-size: 0.8rem;
+}
+
+.spacer {
+  margin-bottom: 2rem;
+}
+
+.spacer-large {
+  margin-bottom: 4rem;
+}
+
+.columns {
+  display: flex;
+  gap: 1rem;
+}
+
+.column {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .columns {
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+/* elements */
+
+#map {
+  width: 75%;
+  aspect-ratio: 4 / 3;
+  background: #F5F5F5;
+}
+
+#photo {
+  width: 40%;
+  aspect-ratio: 4 / 3;
+}
+
+#qr {
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  background: #F5F5F5;
+}
